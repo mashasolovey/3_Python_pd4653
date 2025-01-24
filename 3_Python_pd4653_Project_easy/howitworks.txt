@@ -1,0 +1,38 @@
+1. Odczyt sekwencji z pliku
+Program sprawdza, czy plik sekwencje.txt istnieje:
+
+Jeśli plik istnieje, program wczytuje wszystkie sekwencje zapisane w tym pliku.
+Jeśli plik nie istnieje, program informuje o tym użytkownika i tworzy nowy plik o tej nazwie.
+2. Dodawanie nowej sekwencji
+Program prosi użytkownika o wprowadzenie nowej sekwencji DNA. Wprowadzona sekwencja musi zawierać tylko litery: A, T, C, G
+lub też użytkownik może wprowadzić małe a, t,g,c a program automatycznie zamienie je na duże litery
+
+Jeśli sekwencja jest poprawna, program dodaje ją do pliku sekwencje.txt.
+Jeśli sekwencja jest niepoprawna, program informuje użytkownika, że może zawierać tylko litery A, T, C, G i prosi o nową sekwencję.
+Program sprawdza również, czy dana sekwencja już istnieje w pliku. Jeśli tak, informuje użytkownika, że sekwencja już istnieje
+3. Tworzenie tabeli
+Program tworzy tabelę z następującymi informacjami:
+
+ID sekwencji
+Sekwencja DNA
+Długość sekwencji
+Zawartość GC
+Tabela jest tworzona z poprawnych sekwencji, a duplikaty i błędne sekwencje są usuwane.
+
+4. Wizualizacje (wykresy)
+Program generuje trzy wykresy:
+
+Długość sekwencji – wykres pokazujący długość każdej sekwencji DNA.
+Rozkład GC – wykres pokazujący rozkład zawartości GC w sekwencjach.
+Porównanie długości i GC – wykres pokazujący, jak długość sekwencji wpływa na zawartość GC.
+5. Obsługa błędów
+
+Program jest w stanie rozpoznać błędy:
+
+Jeśli plik sekwencje.txt nie istnieje, zostanie stworzony.
+Jeśli użytkownik wprowadzi niepoprawną sekwencję, program poprosi o poprawną.
+Program nie pozwala na dodawanie duplikatów – jeśli sekwencja już istnieje, użytkownik zostanie o tym poinformowany.
+
+6.Program zawiera pliki
+Project2.py – główny plik z kodem programu.
+sekwencje.txt – plik, w którym zapisane są sekwencje DNA.
